@@ -12,8 +12,7 @@ exports.getActionAnime = function(req, res, next) {
             // save the found document in res.locals
             res.locals.savedResults = result;
             // the document has an id. I create a new route with that id in it
-            res.redirect(`actionAnime/${res.locals.savedResults._id}`)
-            
+            res.redirect(`actionAnime/${res.locals.savedResults._id}`)  
         })
     })
 }
