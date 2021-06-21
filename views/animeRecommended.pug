@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    div 
+        .wrapper
+            .title
+                h1 #{randomAnime.name}
+            .img
+                img(src=`${randomAnime.imageLink}` alt='anime picture')
+                .details
+                    ul
+                        li
+                            h2 G&eacute;nero: #{randomAnime.genre}
+                        li
+                            h2 Episodios: #{randomAnime.episodes}
+                        li
+                            h2 A&ntilde;o: #{randomAnime.year}
+            .sinopsis
+                h2(style='text-align: center; font-family: Martel, serif; color: #66FCF1;') Sinopsis
+                p
+                | #{randomAnime.sinopsis}
+            .buttonDiv
+                a(href='/') Buscar otro anime aleatorio 
+                br
+                a(href="/completeList") Ir a lista completa

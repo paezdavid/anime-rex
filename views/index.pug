@@ -1,0 +1,15 @@
+extends layout
+
+block content
+
+  .categoriesSection 
+    h2(style="margin-bottom: 1rem") ¡Elige una categoría y un anime aleatorio te será recomendado! :)
+    .firstFiveCateg 
+      form(action="/actionAnime" method="get")
+        input(type="submit" value="Acción" class="categoryBtn") 
+
+      form(action="/adventureAnime" method="get")
+        input(type="submit" value="Aventuras" class="categoryBtn") 
+
+    a(href="/completeList" class="listaCompletaBtn") Lista completa  
+  

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    div(style="max-width: 900px; display:flex; align-items:center; justify-content: space-between; margin: 0 auto; padding: 1rem") 
+        h1(style="text-align: center;") Lista completa
+        a(href="/" style="background-color: white; padding: .1rem .5rem; border-radius: 5px; border: none; color: black") Elegir aleatoriamente 
+    .listWrapper 
+        .actionList 
+            h2(style="font-family: 'Martel', serif; color: #66FCF1;") Acción 
+            ul 
+                each anime in foundAnimes
+                    if anime.genre == "Acción"
+                        li 
+                            a(href=`/actionAnime/${anime._id}` class="animeOption")=anime.name 
+
+        .adventureList 
+            h2(style="font-family: 'Martel', serif; color: #66FCF1;") Aventuras 
+            ul 
+                each anime in foundAnimes 
+                    if anime.genre == "Aventuras"
+                        li
+                            a(href=`/adventureAnime/${anime._id}` class="animeOption")=anime.name

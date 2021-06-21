@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(90deg, #13151c, #222d3a);
+  color: white;
+}
+
+h1 { font-family: 'Martel', serif; color: #66FCF1; }
+h2 { font-family: 'Lato', sans-serif; }
+a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+
+/* SECCION PRINCIPAL. INDEX. */
+.categoriesSection {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.firstFiveCateg {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.categoryBtn {
+  padding: .5rem 1.125rem;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categoryBtn:hover {
+  text-decoration: underline;
+}
+
+.listaCompletaBtn {
+  background: white;
+  color: black;
+  padding: .1rem 0.6rem;
+  border-radius: 5px;
+}
+
+/* SECCION DEL ANIME RECOMENDADO */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 1rem 0;
+}
+.title {
+  text-align: center;
+  padding: 1.2rem 0;
+}
+
+.img {
+  max-height: 550px;
+  display: flex;
+  padding: 0 1rem;
+}
+img {
+  max-width: 60%;
+  height: 100%;
+}
+.details {
+  width: 50%;
+  padding: 10px;
+}
+li {
+  list-style: none;
+  padding: .5rem 0;
+}
+.sinopsis { padding: 1rem; }
+.buttonDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttonDiv a {
+  background-color: white;
+  color: black;
+  padding: .5rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+}
+
+/* SECCION DE LA LISTA COMPLETA */
+.listWrapper {
+  max-width: 900px;
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.animeOption:hover {
+  text-decoration: underline;
+  background: white;
+  color: black;
+  padding: .1rem 0.6rem;
+  border-radius: 5px;
+  transition: .1s;
+}
+
+.actionList {
+  width: 50%;
+}
+
+.adventureList {
+  width: 50%;
+}
